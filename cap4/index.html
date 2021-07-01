@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .card{
+     border: 1px solid rgb(3, 196, 202);
+    border-radius: 5px;
+    width: 600px;
+    padding: 5%;
+      background: rgb(150, 142, 142);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+</style>
+<body style="background-color: rgb(255, 255, 255);">
+    <form action="../cap5/index.html">
+        <Center>
+            <h1 style="border-radius: 5px ; border-bottom: solid rgb(107, 176, 185);">CAPITULO 4</h1>
+            <p class="card">
+                Se define una función qué hacer en cada click numérico que se llama onNumberClick y esta función recibe
+                el número en el que se hizo click
+                por lo que cuando hacemos click en él puede comunicar este estado al onNumberClick. Cuando hacemos click
+                en un número informamos el estado
+                del número en el que se hizo click desde onNumberClick, se pasa el comportamiento onNumberClick al
+                componente PlayNumber ese es el
+                componente en el que vamos a hacer click, también se define un nuevo accesorio que se llama onClick y se
+                lo pasa como onNumberClick así es
+                como el comportamiento principal le dice al comportamiento secundario que comportamiento invocar cada
+                vez que se hace click en él, y en el
+                componente PlayNumber se recibe este comportamiento como apoyo y accedemos a el como props.onClick y se
+                va a invocar el comportamiento que
+                fue definido por el padre y se puede pasar en que número se hace click y también se puede pasar cuál es
+                el estado del número en el que se
+                hace click en lugar de calcular el estado nuevamente y pasamos props.status en el onNumberClick, esta
+                función recibe el número en el que
+                se hizo click y el estado actual del número en el que se hizo click.
+            </p>
+            <button type="submit" style="border-radius: 5px ;background: solid rgb(107, 176, 185);">Siguiente</button>
+        </Center>
+
+    </form>
+    <form action="../cap3/index.html">
+        <center>
+            <button type="submit" style="border-radius: 5px ;background: solid rgb(107, 176, 185);">Atras</button>
+        </center>
+    </form>
+
+</body>
+
+</html>

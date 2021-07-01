@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .card{
+     border: 1px solid rgb(3, 196, 202);
+    border-radius: 5px;
+    width: 600px;
+    padding: 5%;
+      background: rgb(150, 142, 142);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+</style>
+<body style="background-color: rgb(255, 255, 255);">
+    <form action="../cap8/index.html">
+        <Center>
+            <h1 style="border-radius: 5px ; border-bottom: solid rgb(107, 176, 185);">CAPITULO 7</h1>
+            <p class="card">
+                Del componente StartMatch un contenedor de otro componente lo cual se va a llamar Game y se mantiene el
+                ReactDOM.Render para renderizar el
+                StartMatch y se cambie el nombre de StartMatch y se introduce un nuevo componente StartMatch que es una
+                función que básicamente devuelve
+                un juego, el atributo key es la identidad única que usa React para identificar un elemento componente lo
+                que significa que si el elemento
+                clave cambia por ejemplo de 1 a 2 React verá un juego completamente diferente porque el juego con la
+                clave 2 es un elemento diferente
+                al juego con la llave 1, entonces simplemente se introduce un estado para el ID del juego que se van a
+                llamar gameld y también setGameld
+                y se utiliza el useState con valor inicial de 1 y cuando se devuelve el juego, se lo devuelve con un
+                gameld.
+            </p>
+            <button type="submit" style="border-radius: 5px ;background: solid rgb(107, 176, 185);">Siguiente</button>
+        </Center>
+
+    </form>
+    <form action="../cap6/index.html">
+        <center>
+            <button type="submit" style="border-radius: 5px ;background: solid rgb(107, 176, 185);">Atras</button>
+        </center>
+    </form>
+
+</body>
+
+</html>
